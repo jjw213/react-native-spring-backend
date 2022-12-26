@@ -19,6 +19,7 @@ public class CommonMarketService {
             if(key.substring(0, market.length()).equals(market.toLowerCase())) {
                 marketService = marketServices.get(key);
                 break;
+
             }
         }
         return marketService.getCoinCurrentPrice(coin);
